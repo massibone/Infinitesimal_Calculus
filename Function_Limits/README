@@ -1,1 +1,14 @@
 Concepts of functions and limits
+
+Sure! Here's a translation of my previous answer:
+
+A continuous function is a mathematical function that maintains its continuity over a range of values in its domain. 
+In other words, a function is continuous if there are no interruptions or jumps in its values when its argument (the independent variable) moves through the domain interval.
+
+For example, consider the function f(x) = x^2. This function is continuous at all of its values of x, since there are no interruptions or jumps in its values when x moves through the domain interval.
+
+On the other hand, consider the function g(x) = 1/x. This function is not continuous at x=0, since the value of g(x) becomes infinite as x approaches zero from either the right or the left.
+
+In practice, an example of a continuous function might be the temperature inside a room during the day. 
+The temperature may fluctuate slightly in response to factors like human activity or changes in sunlight,
+but it will generally change gradually and continuously, without sudden jumps or interruptions.
