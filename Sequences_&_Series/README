@@ -5,3 +5,11 @@ followed by the terms of the sequence, such as ∑n=1^5 n = 1 + 2 + 3 + 4 + 5.
 
 Sequences and series are important concepts in many areas of mathematics, 
 including limit,calculus, number theory, and analysis, and have a wide range of applications in science, engineering, and finance.
+
+
+'''
+we calculate an example financial rate. We start with a principal of $1,000, 
+an interest rate of 5%, and a term of 3 years. We use the formula for compound interest to calculate the future value of the investment, 
+and then subtract the original principal to find the interest earned. Finally, 
+we divide the interest earned by the original principal to find the financial rate of return.
+'''
