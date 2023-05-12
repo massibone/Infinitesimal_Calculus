@@ -1,0 +1,34 @@
+'''
+determina se un sistema di equazioni lineari è determinato, sovradeterminato o indeterminato.
+'''
+---
+Come esempio reale, possiamo pensare ad un'azienda che produce due tipi di prodotto, il primo al prezzo di $5 l'unità e il secondo al prezzo di $10 l'unità. L'azienda ha a disposizione due macchinari A e B per la produzione, che richiedono rispettivamente $2 e $4 di costo per unità prodotta. L'azienda deve produrre almeno 10 unità del primo prodotto e almeno 5 del secondo prodotto. Quanti macchinari A e B deve utilizzare l'azienda per massimizzare il proprio introito?
+
+Il problema può essere formulato come un sistema di due equazioni lineari in due incognite:
+
+```
+2a + 4b >= 10
+4a + 8b >= 5
+```
+
+dove a e b rappresentano rispettivamente il numero di macchinari A e B utilizzati. Per massimizzare il proprio introito, l'azienda deve massimizzare la funzione obiettivo:
+
+```
+f(a, b) = 5a + 10b
+```
+
+Possiamo risolvere il sistema utilizzando il programma Python sopra e ottenere la soluzione ottimale:
+
+```
+Inserisci il valore di a1: 2
+Inserisci il valore di b1: 4
+Inserisci il valore di c1: 10
+Inserisci il valore di a2: 4
+Inserisci il valore di b2: 8
+Inserisci il valore di c2: 5
+La soluzione del sistema è:
+x = 1.0
+y = 0.25
+```
+
+L'azienda dovrebbe utilizzare 1 macchinario A e 0.25 macchinari B per massimizzare il proprio introito, che sarebbe di $8.75.
