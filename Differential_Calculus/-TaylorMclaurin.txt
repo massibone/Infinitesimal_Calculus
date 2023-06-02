@@ -1,0 +1,11 @@
+
+In questo esempio, la funzione funzione(x) rappresenta la funzione per cui si desidera calcolare la serie di Taylor-Maclaurin. Nel mio esempio, ho utilizzato la funzione seno come esempio, ma puoi modificarla secondo le tue esigenze.
+
+Il punto in cui calcolare la serie di Taylor-Maclaurin è definito dalla variabile punto. Nel mio esempio, ho impostato punto = np.pi / 4, che corrisponde a π/4.
+
+
+L'array x rappresenta l'intervallo di valori di x su cui calcolare la funzione originale e la serie di Taylor-Maclaurin.
+
+I termini della serie di Taylor-Maclaurin sono calcolati utilizzando l'approssimazione di secondo ordine: il termine costante (termine_0), il termine lineare (termine_1) e il termine quadratico (termine_2).
+
+Infine, viene creato il grafico della funzione originale e della serie di Taylor-Maclaurin del secondo ordine.
