@@ -1,0 +1,8 @@
+Methods to solve equations:
+-Newton-Raphson method
+-Secants method
+iterative methods that start
+with an approximation of the root and iteratively improve this approximation until it lies within a
+given tolerance.
+-bisection method
+-Brent’s method is an improvement on the bisection method
