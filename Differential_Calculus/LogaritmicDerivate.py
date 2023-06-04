@@ -1,5 +1,5 @@
 import sympy as sp
-# Definizione della variabile e della funzione
+#Definizione della variabile e della funzione
 
 x = sp.Symbol('x')
 
