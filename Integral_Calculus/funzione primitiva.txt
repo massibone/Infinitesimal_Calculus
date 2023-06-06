@@ -1,0 +1,26 @@
+Una funzione primitiva, chiamata anche antiderivata o integrale indefinito,
+è una funzione che, quando derivata, restituisce la funzione originale (a meno di una costante).
+
+Più formalmente, data una funzione f(x), una funzione primitiva F(x) è tale che la sua derivata F'(x) sia uguale alla funzione originale f(x):
+
+F'(x) = f(x)
+
+La primitiva di una funzione non è unica, poiché aggiungendo una costante arbitraria C all'antiderivata, 
+si otterrà ancora un'altra primitiva. Pertanto, le primitiva di una funzione costituiscono una famiglia di funzioni che differiscono solo per una costante.
+
+Ora, per quanto riguarda la primitiva di 1/x, ovvero l'integrale indefinito di 1/x, 
+essa è comunemente nota come logaritmo naturale assoluto o logaritmo assoluto, indicato come ln|x|.
+
+La dimostrazione di questa relazione coinvolge le proprietà dei logaritmi e il calcolo differenziale.
+
+Consideriamo la funzione f(x) = 1/x. Vogliamo trovare una funzione F(x) la cui derivata sia 1/x.
+
+Derivando la funzione F(x) = ln|x|, utilizzando le regole di derivazione dei logaritmi e della catena, otteniamo:
+
+F'(x) = d/dx ln|x| = 1/x
+
+Quindi, la funzione F(x) = ln|x| è una primitiva di 1/x.
+
+La ragione per cui viene utilizzato il valore assoluto è che la funzione 1/x non è definita per x = 0, 
+quindi l'integrale indefinito viene esteso per includere sia i valori positivi che negativi di x,
+utilizzando il valore assoluto per garantire che il risultato sia valido per entrambi i lati del punto di discontinuità.
