@@ -4,6 +4,9 @@ They describe relationships between the function and its rates of change.
 A differential equation typically contains one or more derivatives of an unknown function. 
 The goal is to find the function that satisfies the equation, given certain initial conditions or constraints.
 
+Differential equations are relationships between a function and its derivatives, 
+and they are used to model systems in every engineering and science field. 
+
 Differential equations are used to model and study various phenomena in science, engineering, economics, and many other fields. 
 They provide a powerful tool for describing how quantities change and evolve over time or space.
 
