@@ -1,1 +1,1 @@
-cauchyIntegral.txt
+Un esempio di utilizzo reale del teorema di Cauchy si trova nell'ambito dell'analisi complessa e della teoria dei residui, che ha numerose applicazioni in matematica, fisica e ingegneria. Una delle applicazioni più comuni del teorema di Cauchy riguarda il calcolo di integrali complessi.
