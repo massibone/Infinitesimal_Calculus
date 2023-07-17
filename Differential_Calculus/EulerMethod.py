@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 plt.style.use('seaborn-poster')
-%matplotlib inline
 
 # Define parameters
 f = lambda t, s: np.exp(-t) # ODE
