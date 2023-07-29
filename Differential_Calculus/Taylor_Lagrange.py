@@ -39,3 +39,28 @@ Parametri:
 
 
 # Esempio di utilizzo
+
+# Definizione della funzione da approssimare
+def my_function(x):
+    return np.sin(x)
+
+# Parametri dell'approssimazione di Taylor
+x0 = 0.0  # Punto di espansione
+n = 4     # Grado massimo dell'approssimazione
+
+# Intervallo su cui calcolare l'approssimazione
+interval = (-np.pi, np.pi)
+
+# Calcolo dell'approssimazione di Taylor e del resto secondo Lagrange
+x_vals, y_vals, r_vals = taylor_lagrange(my_function, x0, n, interval)
+# Plot dell'approssimazione di Taylor e del resto secondo Lagrange
+plt.figure(figsize=(10, 6))
+plt.plot(x_vals, my_function(x_vals), label='Funzione originale')
+plt.plot(x_vals, y_vals, label='Approssimazione di Taylor')
+plt.plot(x_vals, r_vals, label='Resto secondo Lagrange')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title(f'Approssimazione di Taylor di grado {n} per la funzione sin(x)')
+plt.legend()
+plt.grid(True)
+plt.show()
