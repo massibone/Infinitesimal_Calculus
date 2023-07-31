@@ -1,0 +1,10 @@
+ l'equazione logistica, anche conosciuta come teorema di Verhulst, per descrivere la crescita di una popolazione. La funzione logistic_equation(y, r, K) rappresenta l'equazione logistica, in cui y rappresenta la popolazione, r è il tasso di crescita e K è la capacità di carico (il valore massimo che la popolazione può raggiungere).
+
+I parametri dell'equazione logistica sono definiti come r = 2.5 e K = 100. Questi possono essere regolati in base alle tue esigenze.
+
+Il dominio degli input è rappresentato dalla variabile t, che genera un array di valori equidistanti nell'intervallo [0, 10], che rappresenta il tempo.
+
+Successivamente, risolviamo l'equazione logistica utilizzando un loop. La variabile y0 rappresenta la condizione iniziale della popolazione, e l'array y tiene traccia della popolazione nel tempo. Il loop calcola il valore successivo della popolazione in base alla soluzione dell'equazione logistica utilizzando il valore precedente della popolazione.
+
+Infine, la soluzione viene tracciata utilizzando plt.plot(t, y, label='Soluzione'), e vengono configurati il titolo del grafico, le etichette degli assi e la legenda.
+
