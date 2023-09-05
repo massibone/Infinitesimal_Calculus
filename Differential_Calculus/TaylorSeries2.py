@@ -29,3 +29,17 @@ Restituisce:
         y_vals[i] = y
 
     return x_vals, y_vals
+# Esempio di utilizzo
+
+# Definizione delle funzioni da approssimare
+
+# Funzione esponenziale
+def exponential(x0, k):
+    return x0 ** k
+
+# Funzione seno
+def sine(x0, k):
+    if k % 2 == 0:
+        return 0.0
+    else:
+        return (-1) ** ((k - 1) // 2) / np.math.factorial(k)
