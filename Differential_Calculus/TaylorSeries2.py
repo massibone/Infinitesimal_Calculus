@@ -43,3 +43,34 @@ def sine(x0, k):
         return 0.0
     else:
         return (-1) ** ((k - 1) // 2) / np.math.factorial(k)
+
+# Funzione logaritmo
+def logarithm(x0, k):
+    if k == 0:
+        return np.log(x0)
+    else:
+        return (-1) ** (k - 1) * (k - 1) / (x0 ** k)
+
+# Parametri dell'approssimazione di Taylor
+x0 = 1.0  # Punto di espansione
+n = 5     # Grado massimo dell'approssimazione
+
+# Intervallo su cui calcolare l'approssimazione
+interval = (0.1, 2.0)
+
+# Calcolo dell'approssimazione di Taylor per le funzioni
+x_vals_exp, y_vals_exp = taylor_series(exponential, x0, n, interval)
+x_vals_sin, y_vals_sin = taylor_series(sine, x0, n, interval)
+x_vals_log, y_vals_log = taylor_series(logarithm, x0, n, interval)
+
+# Plot delle approssimazioni di Taylor
+plt.figure(figsize=(10, 6))
+plt.plot(x_vals_exp, y_vals_exp, label='e^x')
+plt.plot(x_vals_sin, y_vals_sin, label='sin(x)')
+plt.plot(x_vals_log, y_vals_log, label='log(x)')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title(f'Approssimazione di Taylor di grado {n}')
+plt.legend()
+plt.grid(True)
+plt.show()
