@@ -34,3 +34,22 @@ conseguenza_1 = sp.solveset(df - valor_medio, x, domain=sp.Interval.open(a, b))
 # Conseguenza 2: Se f'(x) > 0 per ogni x in (a, b), allora f è strettamente crescente sull'intervallo [a, b]
 conseguenza_2 = df > 0
 
+
+# Stampa dei risultati
+print("Teorema del Valor Medio:")
+print("Il valore medio di f(x) sull'intervallo [a, b] è:", valor_medio)
+print("Conseguenza 1 del TVM: Esiste almeno un punto c in (a, b) tale che f'(c) = valor_medio.")
+print("Soluzioni per c:", conseguenza_1)
+print("Conseguenza 2 del TVM: Se f'(x) > 0 per ogni x in (a, b), allora f è strettamente crescente sull'intervallo [a, b].")
+print("La funzione f'(x) è strettamente positiva sull'intervallo [a, b]:", conseguenza_2)
+
+#SOLUTION
+'''
+Teorema del Valor Medio:
+Il valore medio di f(x) sull'intervallo [a, b] è: -f(0)/2 + f(2)/2
+Conseguenza 1 del TVM: Esiste almeno un punto c in (a, b) tale che f'(c) = valor_medio.      
+Soluzioni per c: ConditionSet(x, Eq(f(0)/2 - f(2)/2 + Derivative(f(x), x), 0), Interval.open(0, 2))
+Conseguenza 2 del TVM: Se f'(x) > 0 per ogni x in (a, b), allora f è strettamente crescente sull'intervallo [a, b].
+La funzione f'(x) è strettamente positiva sull'intervallo [a, b]: Derivative(f(x), x) > 0 
+'''
+
