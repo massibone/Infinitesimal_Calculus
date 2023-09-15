@@ -25,3 +25,26 @@ T=solution.y[0]
 dTdx = solution.y[1]
 
 Ts1=T[0]
+q= -k*dTdx
+
+plt.figure(1,dpi=100)
+plt.xscale('linear')
+plt.yscale('linear')
+plt.xlim(0,1)
+plt.ylim(0,500)
+plt.title("Temperature")
+plt.xlabel("distance in  m")
+plt.ylabel("T and K")
+plt.plot(x,T)
+
+plt.figure(2,dpi=100)
+plt.xscale('linear')
+plt.yscale('linear')
+
+plt.title("Heat")
+plt.xlabel("distance in  m")
+plt.ylabel("Flux and Kilowatts")
+plt.plot(x,q/1000)
+plt.show()
+
+
