@@ -15,3 +15,7 @@ dfdx2Function = smp.lambdify((x,a,b,c), dfdx2)
 
 x = np.linspace(1,2,100)
 y = dfdx2Function(x, a=1, b=2, c=3)
+plt.plot(x,y)
+plt.ylabel(' $df / dx$', fontsize=20)
+plt.xlabel('$x$', fontsize=20)
+plt.show()
