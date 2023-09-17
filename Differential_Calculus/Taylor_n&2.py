@@ -18,3 +18,14 @@ taylor_order_4 = taylor_approximation(function, x, 0, 4)
 
 # Approssimazione di Taylor di ordine 2
 taylor_order_2 = taylor_approximation(function, x, 0, 2)
+
+plt.figure(figsize=(8, 6))
+plt.plot(x, function(x), label='Funzione')
+plt.plot(x, taylor_order_4, label='Taylor ordine 4')
+plt.plot(x, taylor_order_2, label='Taylor ordine 2')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Approssimazione di Taylor')
+plt.legend()
+plt.grid(True)
+plt.show()
